@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos - Safe Travel System</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Amigos</h2>
+        <span class="close-btn" onclick="toggleSidebar()">×</span>
+        <ul>
+            <li><a href="#">Your Profile</a></li>
+            <li><a href="#">Save Emergency Contacts</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">🚨 Call Police</a></li>
+            <li><a href="../html/index.html">Go to Main Page</a></li>
+        </ul>
+    </div>
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Amigos - Safe Travel System</h1>
+        <p>Your safe travel companion with dynamic route tracking and safety features.</p>
+
+        <!-- Emergency Buttons -->
+        <div class="emergency-buttons">
+            <button class="sos-btn" onclick="sendSOS()">🚨 Send SOS</button>
+            <button class="police-btn" onclick="callPolice()">📞 Call Police</button>
+            <button class="alarm-btn" onclick="playAlarm()">🔊 Alarm</button>
+        </div>
+
+        <!-- User Input for Destination -->
+        <div class="input-section">
+            <input type="text" id="destination" placeholder="Enter Destination" />
+            <button id="fetchRoutesBtn">Get Routes</button>
+        </div>
+
+        <!-- Route Table -->
+        <table id="routeTable">
+            <thead>
+                <tr>
+                    <th>Route</th>
+                    <th>Time</th>
+                    <th>Reliability</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Routes will populate here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Amigos - Your Safety is Our Priority</p>
+        <div class="social-icons">
+            <a href="#"><img src="../assets/facebook_icon.png" alt="Facebook"></a>
+            <a href="#"><img src="../assets/instagram_icon.png" alt="Instagram"></a>
+            <a href="#"><img src="../assets/twitter_icon.png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/home.js"></script>
+</body>
+</html>
